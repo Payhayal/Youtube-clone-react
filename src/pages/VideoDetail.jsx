@@ -3,12 +3,10 @@ import { useParams } from "react-router-dom";
 import { getData } from "../utils/helpers";
 import ReactPlayer from "react-player/youtube";
 import Loading from "./../components/Loading";
-import { AiFillLike, AiFillDislike } from "react-icons/ai";
-import millify from "millify";
 import ChannelDetail from "../components/ChannelDetail";
 import VideoCard from "./../components/VideoCard";
 
-const VideoDetail = () => {
+const VideoDetail = ({ color, setColor }) => {
   const { videoId } = useParams();
   const [detail, setDetail] = useState(null);
   const [relateds, setRelateds] = useState(null);
@@ -25,7 +23,7 @@ const VideoDetail = () => {
   }, [videoId]);
 
   return (
-    <div className="flex flex-col gap-5 lg:flex-row p-4 bg-pink-500 min-h-[95vh]">
+    <div className="flex flex-col gap-5 lg:flex-row p-4 min-h-[95vh]">
       <div className="lg:max-w-[1100px]">
         <ReactPlayer
           width={"100%"}
@@ -41,7 +39,7 @@ const VideoDetail = () => {
           ? "..."
           : relateds.map((item, index) => {
               if (item.type !== "video") return;
-              return (<VideoCard key={index} video={item.video} />);
+              return <VideoCard key={index} video={item.video} />;
             })}
       </div>
     </div>

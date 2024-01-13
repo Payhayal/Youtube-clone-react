@@ -7,8 +7,7 @@ import VideoCard from "../components/VideoCard";
 const Feed = () => {
   const { videos } = useContext(YoutubeContext);
   return (
-    <div className="flex min-h-[100vh] bg-[#f06ac8] text-black">
-      
+    <div className="flex min-h-[100vh] text-black">
       <SideNav />
       <div className="videos w-full">
         {!videos ? (
@@ -16,12 +15,7 @@ const Feed = () => {
         ) : (
           videos.map((item, index) => {
             if (item.type !== "video") return;
-            return (
-            <VideoCard 
-            key={index} 
-            video={item.video} 
-            />
-            );
+            return <VideoCard key={index} video={item.video} />;
           })
         )}
       </div>

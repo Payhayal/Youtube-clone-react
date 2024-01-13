@@ -11,8 +11,8 @@ const SideNav = () => {
         <div key={indexx} onClick={() => setSelectedCategory(item)}>
           <div
             className={`
-           ${selectedCategory.name === item.name && "bg-purple-500"}
-           flex items-center gap-2 p-2 py-3 text-lg cursor-pointer rounded-md transition hover:bg-purple-300`}
+           ${selectedCategory.name === item.name && "bg-[#d0cdcc]"}
+           flex items-center gap-2 p-2 py-3 text-lg cursor-pointer rounded-md transition hover:bg-gray-400`}
           >
             {item.icon}
             <span>{item.name}</span>

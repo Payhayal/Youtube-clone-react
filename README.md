@@ -1,15 +1,14 @@
-# React + Vite
+### This is a Youtube-Clone Project created with React. Please look at the gif and photos for more information.
 
-##Libraries Used:
- 
- -react-icons
- 
- -react-router-dom
- 
- -axios
- 
- -tailwind
+## Libraries Used:
 
+-react-icons
+
+-react-router-dom
+
+-axios
+
+-tailwind
 
 ##Axios: #Purpose: Axios is a popular JavaScript library used for making HTTP requests from browsers or Node.js. It works with Promises and provides an easy-to-use API.
 
@@ -21,10 +20,9 @@
 
 ##Tailwind CSS: Tailwind is a utility-first CSS framework that provides pre-built classes to create custom designs without leaving your HTML. It's known for its flexibility and ease of use in creating responsive and modern user interfaces.
 
+##SCREEN GIF
 
-
- <!-- ##SCREEN GIF
-![](/images/ytb1.gif) -->
+![](/images/youtube.gif)
 
 ##SCREEN VIEW
 
@@ -36,4 +34,4 @@
 
 ![](/images/ytb4.png)
 
- 
+![](/images/ytb5.png)
